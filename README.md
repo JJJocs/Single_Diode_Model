@@ -6,9 +6,11 @@ Estimación de la generación de energía ideal de un panel solar fotovoltaico (
 ## Objetivo Principal
 Estimar la potencia horaria teórica del panel como base para futuros análisis de rendimiento o detección de anomalías.
 
-## Datos
-* Fuente: National Solar Radiation Database (NSRDB) 2023.
-* Archivo: `977348_9.93_-84.06_2023.csv` (Zona Horaria: America/Costa_Rica, UTC-6).
+## Fuente de Datos
+
+* **Datos Meteorológicos:** Se utilizaron datos horarios para el año 2023 obtenidos del National Solar Radiation Database (NSRDB) de NREL para la ubicación especificada (Lat: 9.93°, Lon: -84.04°).
+* **Archivo:** `977348_9.93_-84.06_2023.csv` (incluido en la raíz de este repositorio).
+    * *Nota:* Las marcas de tiempo en este archivo CSV están originalmente en **UTC**. El código (`implementación_del_modelo.ipynb`) **convierte** estas marcas de tiempo a la zona horaria local de Costa Rica (`America/Costa_Rica`, UTC-6) antes del análisis.
 
 ## Metodología
 1.  Cálculo de posición solar.
